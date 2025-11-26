@@ -9,7 +9,7 @@ const Projects = () => {
 
             <div >
                 <h1 className='font-bold text-black text-4xl'>Featured Work</h1>
-                <hr className="border-gray-800 w-[100%]  mt-5 pt-5" />
+                <hr className="border-gray-800 w-full  mt-5 pt-5" />
             </div>
 
             
