@@ -64,7 +64,7 @@ const Hero = () => {
                 <button className='p-2 border-gray-700 border-2 hover:bg-black hover:text-white text-gray-800  rounded flex justify-center items-center hover:transition-colors hover:duration-400 gap-1'><FaDownload className='hover:text-white' />Download Cv</button>
             </div>
 
-            <hr class="border-gray-800 w-full" />
+            <hr className="border-gray-800 w-full" />
 
             <div className=' flex  gap-3 items-start '>
                 <p className='inline'>Follow me:</p>

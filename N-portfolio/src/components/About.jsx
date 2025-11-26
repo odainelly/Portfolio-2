@@ -1,5 +1,7 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import Card from './Card'
+
 
 const About = () => {
   return (
@@ -9,7 +11,7 @@ const About = () => {
           <div className='flex flex-col justify-start items-start w-[50%]'>
             <h2 className='font-medium text-gray-700 pt-11'>About Me</h2>
             <h2 className='text-black font-bold text-3xl pt-11'>Building Meaningful <br />Digital Experiences </h2>
-            <hr class="border-gray-800 w-[55%] mt-5" />
+            <hr className="border-gray-800 w-[55%] mt-5" />
 
             <p className='mt-7 text-sm'>
                 I'm a creative front-end developer passionate about building modern and responsive web experiences.
@@ -26,9 +28,9 @@ const About = () => {
             <h2 className='text-black mt-7 text-2xl font-bold'>What Drives Me</h2>
 
             <div className='flex justify-between gap-[32px] mt-7 items-start'>
-              <div className='flex flex-col justify-center items-center  px-[20px] py-[5px] border-black border-2 rounded-xl'><h2>Languages</h2></div>
-              <div className='flex flex-col justify-center items-center  px-[20px] py-[5px] border-black border-2 rounded-xl'><h2>Education</h2></div>
-              <div className='flex flex-col justify-center items-center  px-[20px] py-[5px] border-black border-2 rounded-xl'><h2>Projects</h2></div>
+                <Card title={`Languages`} description={`HTML, CSS, ReactJS`}/>
+                <Card title={`Education`} description={`Bsc.Computer Science`}/>
+                <Card title={`Projects`} description={`Scalable frontends`}/>
             </div>
 
           </div>
