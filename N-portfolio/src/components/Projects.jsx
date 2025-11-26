@@ -1,4 +1,6 @@
 import React from 'react'
+import ProjectContainer from './ProjectContainer'
+import { assets } from '../assets/assets'
 
 const Projects = () => {
   return (
@@ -10,6 +12,18 @@ const Projects = () => {
             <div >
                 <h1 className='font-bold text-black text-4xl'>Featured Work</h1>
                 <hr className="border-gray-800 w-full  mt-5 pt-5" />
+            </div>
+
+
+            <div className='  gap-11 grid grid-cols-3'>
+
+                <ProjectContainer img={assets.project1}/>
+                <ProjectContainer img={assets.project2}/>
+                <ProjectContainer img={assets.project3}/>
+                <ProjectContainer img={assets.project4}/>
+                <ProjectContainer img={assets.project5}/>
+                <ProjectContainer img={assets.project6}/>
+
             </div>
 
             
