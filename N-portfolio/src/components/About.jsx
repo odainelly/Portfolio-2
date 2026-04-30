@@ -5,7 +5,7 @@ import Card from './Card'
 
 const About = () => {
   return (
-    <div id='about' className='container mx-auto w-full min-h-screen p-27'>
+    <div id='about' className='container mx-auto w-full  p-22'>
         <div className='mx-auto flex gap-11'> 
           
           <div className='flex flex-col justify-start items-start w-[50%]'>

@@ -6,11 +6,15 @@ import { IoLocationSharp } from "react-icons/io5";
 import { TypeAnimation } from 'react-type-animation'
 import { FaArrowRight } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa6";
+import { Fade, Slide, Zoom } from "react-awesome-reveal";
 
 const Hero = () => {
   return (
-    <div className='container w-full min-h-screen flex gap-11 p-27'>
+
+    <div id='hero' className='container w-full min-h-screen flex gap-11 p-22 '>
+        
         <div className=' flex flex-col gap-11 justify-center items-start w-[50%]'>
+
             <p className='bg-[#80808037] transition-colors hover:bg-[#46464637] p-2 rounded-2xl '>
             <span >. </span>Available for freelance work
             </p>

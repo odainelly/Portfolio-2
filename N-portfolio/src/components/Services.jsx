@@ -1,8 +1,10 @@
 import React from 'react'
+import ProjectCard from './ProjectContainer'
+import { assets } from '../assets/assets'
 
 const Services = () => {
   return (
-    <div className='container mx-auto w-full min-h-screen p-27'>
+    <div id='services' className='container mx-auto w-full  p-22'>
         <div className='mx-auto flex items-center flex-col justify-center gap-5' >
 
             <h2 className='txt-gray-600 font-3xl'>Services</h2>
@@ -15,7 +17,13 @@ const Services = () => {
 
         </div>        
 
-        
+
+        <div className='grid grid-cols-4 gap-4 mt-8'>
+            <ProjectCard img={assets.programming} />
+            <ProjectCard img={assets.web} />
+            <ProjectCard img={assets.dataWork} />
+            <ProjectCard img={assets.problemSolving} />
+        </div>     
         
     </div>
   )

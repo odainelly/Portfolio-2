@@ -9,7 +9,11 @@ import project3 from './Task.jpg'
 import project4 from './cp1.png'
 import project5 from './dashboard.jpg'
 import project6 from './Weather.jpg'
-
+import programming from './programming.svg'
+import web from './web.svg'
+import data from './data.svg'
+import dataWork from './data-at-work.svg'
+import problemSolving from './problem-solving.svg'
 
 
 export const assets = {
@@ -24,4 +28,10 @@ export const assets = {
     project4,
     project5,
     project6,
+    programming,
+    web,
+    data,
+    dataWork,
+    problemSolving ,
+    
 }

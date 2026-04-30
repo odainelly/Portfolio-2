@@ -53,6 +53,9 @@ const ProjectCard = ({ img, title, description, tags = [], github, demo }) => {
       {/* Description */}
       <p className="text-gray-600 text-sm mb-4">{description}</p>
 
+      
+      
+
      
       
       
