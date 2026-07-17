@@ -1,66 +1,44 @@
-// import React from "react";
-
-// const ProjectContainer = ({ img, title, description }) => {
-//   return (
-//     <div
-//       className="w-full max-w-md bg-white rounded-2xl shadow-md p-6 
-//                  flex flex-col items-center text-center
-//                  transition-all duration-300 
-//                  hover:-translate-y-2 hover:shadow-xl
-//                  hover:border-orange-400 border border-transparent"
-//     >
-//       <img
-//         src={img}
-//         alt={title}
-//         className="w-28 h-28 object-contain mb-5"
-//       />
-
-//       <h2 className="text-xl font-semibold text-gray-800 mb-2">
-//         {title}
-//       </h2>
-
-//       <p className="text-gray-600 text-sm leading-relaxed">
-//         {description}
-//       </p>
-//     </div>
-//   );
-// };
-
-// export default ProjectContainer;
-
-
-
-
-
+// components/ProjectContainer.jsx
 import React from "react";
 
-const ProjectCard = ({ img, title, description, tags = [], github, demo }) => {
+const ProjectContainer = ({ img, title, description, tags = [], github, demo }) => {
   return (
-    <div
-      className="bg-white rounded-2xl shadow-md p-6 w-full max-w-md 
-                 transition-all duration-300 hover:-translate-y-2  hover:shadow-2xl"
-    >
-      {/* Image */}
+    <div className="bg-white rounded-2xl shadow-md p-5 sm:p-6 w-full max-w-md mx-auto
+                 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
       <img
         src={img}
-        alt={title}
-        className="w-full h-48 object-cover rounded-xl mb-5"
+        alt={title || "Project preview"}
+        className="w-full h-40 sm:h-48 object-cover rounded-xl mb-4"
       />
 
-      {/* Title */}
-      <h2 className="text-xl font-semibold mb-2">{title}</h2>
+      <h2 className="text-lg sm:text-xl font-semibold mb-2">{title}</h2>
 
-      {/* Description */}
       <p className="text-gray-600 text-sm mb-4">{description}</p>
 
-      
-      
+      {tags.length > 0 && (
+        <div className="flex flex-wrap gap-2 mb-4">
+          {tags.map((tag) => (
+            <span key={tag} className="text-xs bg-gray-100 px-2 py-1 rounded-full text-gray-700">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
 
-     
-      
-      
+      <div className="flex gap-3 text-sm font-medium">
+        {github && (
+          <a href={github} target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-600">
+            GitHub
+          </a>
+        )}
+        {demo && (
+          <a href={demo} target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-600">
+            Live Demo
+          </a>
+        )}
+      </div>
     </div>
   );
 };
 
-export default ProjectCard;
+export default ProjectContainer;

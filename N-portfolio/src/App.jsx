@@ -1,3 +1,4 @@
+// App.jsx
 import React from 'react'
 import FloatingNav from './components/FloatingNav'
 import Hero from './components/Hero'
@@ -10,22 +11,18 @@ import Contact from './components/Contact'
 
 const App = () => {
   return (
-    <div>
-
-      <div className='container mx-auto'>
+    <div className='min-h-screen flex flex-col'>
       <FloatingNav />
-      <Hero />
-      <About />
-      <Projects />
-      <Skills />
-      <Services />
-      <Contact />
-      </div>
-
-    <Footer />
-
+      <main className='flex-1 w-full max-w-[1440px] mx-auto'>
+        <Hero />
+        <About />
+        <Projects />
+        <Skills />
+        <Services />
+        <Contact />
+      </main>
+      <Footer />
     </div>
-    
   )
 }
 
